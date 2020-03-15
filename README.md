@@ -3,13 +3,17 @@
 [![npm version](https://img.shields.io/npm/v/country-flag-icons.svg?style=flat-square)](https://www.npmjs.com/package/country-flag-icons)
 [![npm downloads](https://img.shields.io/npm/dm/country-flag-icons.svg?style=flat-square)](https://www.npmjs.com/package/country-flag-icons)
 
-Vector country flag icons in 3x2 aspect ratio.
+Vector country flag icons in `3:2` aspect ratio.
+
+Also provides `1:1` crops of the `3:2` flags (not custom `1:1` flags).
 
 * Optimized for small size on screen (little detail, minimalism).
 * Small file size.
 * Comes with React components for all flags (exported from `/react` subpackage).
 
-[See the flags](http://catamphetamine.gitlab.io/country-flag-icons/3x2) (3x2)
+[See `3:2` flags](http://catamphetamine.gitlab.io/country-flag-icons/3x2)
+
+[See `1:1` flags](http://catamphetamine.gitlab.io/country-flag-icons/1x1) (just `1:1` crops of the `3:2` flags, not custom `1:1` flags)
 
 ## GitHub Ban
 
@@ -105,8 +109,10 @@ import Flags from 'country-flag-icons/react/3x2'
 
 ## Credits
 
-I used Google image search for flag references, and various country flag packs (including [FlagKit](https://github.com/madebybowtie/FlagKit) / [`flagpack`](https://github.com/jackiboy/flagpack)) for design ideas. Sometimes there was no need to re-draw a flag — usually in cases when a flag is just a set of colored stripes and there already is a 3x2 SVG version of it somewhere at Wikipedia or some other free flag pack, so in those cases I simply copied those flags (because they look the same in every flag pack).
+I used Google image search for flag references, and various country flag packs (including [FlagKit](https://github.com/madebybowtie/FlagKit) / [`flagpack`](https://github.com/jackiboy/flagpack)) for design ideas. Sometimes there was no need to re-draw a flag — usually in cases when a flag is just a set of colored stripes and there already is an SVG version of it somewhere at Wikipedia or some other free flag pack, so in those cases I simply copied those flags (because they look the same in every flag pack).
 
 Some countries officially use their "mother" country flag (those used to be colonies). For example, `BV` (Bouvet Island) and `SJ` (Svalbard and Jan Mayen) use the flag of Norway; `GP` (Guadeloupe) and `RE` (Réunion) use the flag of France.
 
 CSS flag icons feature has been submitted by [`@mindplay-dk`](https://github.com/mindplay-dk).
+
+`3:2` to `1:1` flag icons transform offsets submitted by [`@mindplay-dk`](https://github.com/mindplay-dk).
