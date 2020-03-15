@@ -6,7 +6,7 @@ pages:
   - npm run generate-countries
   - npm run website:copy-flags
   - npm run website:generate-flags-page
-  - cp --recursive ./website/* ./public/
+  - mv ./website ./public
 
   artifacts:
     paths:
