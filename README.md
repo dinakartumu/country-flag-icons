@@ -9,7 +9,11 @@ Vector country flag icons in 3x2 aspect ratio.
 * Small file size.
 * Comes with React components for all flags (exported from `/react` subpackage).
 
-[See the flags](http://catamphetamine.github.io/country-flag-icons/3x2) (3x2)
+[See the flags](http://catamphetamine.gitlab.io/country-flag-icons/3x2) (3x2)
+
+## GitHub Ban
+
+On March 9th, 2020, GitHub, Inc. silently [banned](https://medium.com/@catamphetamine/how-github-blocked-me-and-all-my-libraries-c32c61f061d3) my account (and all my libraries) without any notice for an unknown reason. I opened a support ticked but they didn't answer. Because of that, I had to move all my libraries to [GitLab](https://gitlab.com/catamphetamine).
 
 ## Install
 
@@ -43,12 +47,12 @@ countries.includes('ZZ') === false
 
 ### Web
 
-Flags can be linked directly from this library's github pages website.
+Flags can be linked directly from this library's gitlab pages website.
 
 ```html
 <img
   alt="United States"
-  src="http://catamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+  src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg"/>
 ```
 
 Flags can also be used in the form of CSS classes imported from [`country-flag-icons/3x2/flags.css`](https://unpkg.com/country-flag-icons/3x2/flags.css) where all flag icons are inlined as `background-image` data URLs. CSS flag icon height can be set via `--CountryFlagIcon-height` [CSS variable](https://caniuse.com/#feat=css-variables).
@@ -105,4 +109,4 @@ I used Google image search for flag references, and various country flag packs (
 
 Some countries officially use their "mother" country flag (those used to be colonies). For example, `BV` (Bouvet Island) and `SJ` (Svalbard and Jan Mayen) use the flag of Norway; `GP` (Guadeloupe) and `RE` (Réunion) use the flag of France.
 
-CSS flag icons feature has been [submitted](https://github.com/catamphetamine/country-flag-icons/pull/4) by [`@mindplay-dk`](https://github.com/mindplay-dk).
+CSS flag icons feature has been submitted by [`@mindplay-dk`](https://github.com/mindplay-dk).

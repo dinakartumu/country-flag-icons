@@ -1,5 +1,5 @@
 import path from 'path'
-import fs from 'fs'
+import fs from 'fs-extra'
 import COUNTRIES from '../source/countries.json'
 import countryNames from './countryNames.json'
 
@@ -77,4 +77,4 @@ html += `
 	</html>
 `
 
-fs.writeFileSync(path.join(__dirname, '../website/3x2/index.html'), html)
+fs.outputFileSync(path.join(__dirname, '../website/3x2/index.html'), html)
