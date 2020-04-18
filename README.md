@@ -103,7 +103,7 @@ import Flags from 'country-flag-icons/react/3x2'
 
 ## Alternatives
 
-* [FlagKit](https://github.com/madebybowtie/FlagKit) ([`flagpack`](https://github.com/jackiboy/flagpack) npm package) — `4x3` and `1x1` SVG flag icons. MIT licence.
+* [FlagKit](https://github.com/madebybowtie/FlagKit) ([`flagpack`](https://github.com/jackiboy/flagpack) npm package) — [`4x3`](https://github.com/jackiboy/flagpack/tree/master/flags/4x3) and [`1x1`](https://github.com/jackiboy/flagpack/tree/master/flags/1x1) SVG flag icons. MIT licence.
 
 <!-- Doesn't have [`AC` and `TA` flags](https://github.com/jackiboy/flagpack/pull/4). -->
 
