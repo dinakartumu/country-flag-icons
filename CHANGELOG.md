@@ -1,3 +1,8 @@
+1.2.2 / 29.07.2020
+==================
+
+* Added [French Southern Territories (`TF`) flag](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/2)
+
 1.2.0 / 15.03.2020
 ==================
 
