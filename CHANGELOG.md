@@ -3,6 +3,8 @@
 
 * [Added "named exports"](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/3) in React exports.
 
+* Added `sideEffects` property to `package.json` ("tree shaking").
+
 1.2.2 / 29.07.2020
 ==================
 
