@@ -1,3 +1,8 @@
+1.2.3 / 08.08.2020
+==================
+
+* [Added "named exports"](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/3) in React exports.
+
 1.2.2 / 29.07.2020
 ==================
 
