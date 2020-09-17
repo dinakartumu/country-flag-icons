@@ -256,4 +256,5 @@ exports.ZA = flags.ZA;
 exports.ZM = flags.ZM;
 exports.ZW = flags.ZW;
 
+delete flags.default
 exports['default'] = flags

@@ -10,6 +10,7 @@ describe('exports/react/3x2', () => {
 		const Library = require('../react/3x2/index.commonjs')
 		// Library.RU.should.be.a('function')
 		Library.default.RU.should.be.a('function')
+		expect(Library.default.default).to.be.undefined
 		Library.RU.should.be.a('function')
 	})
 })

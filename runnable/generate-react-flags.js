@@ -31,6 +31,7 @@ var flags = require('../../commonjs/react/${aspectRatio}')
 
 ${COUNTRIES.map((country) => 'exports.' + country + ' = flags.' + country + ';').join('\n')}
 
+delete flags.default
 exports['default'] = flags
 	`.trim()
 }
