@@ -51,12 +51,12 @@ countries.includes('ZZ') === false
 
 ### Web
 
-Flags can be linked directly from this library's gitlab pages website.
+Flags can be linked directly from this library's [gitlab pages website](https://catamphetamine.gitlab.io/country-flag-icons), or from a [github pages mirror](https://purecatamphetamine.github.io/country-flag-icons), which seems a tiny bit faster.
 
 ```html
 <img
   alt="United States"
-  src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg"/>
+  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
 ```
 
 Flags can also be used in the form of CSS classes imported from [`country-flag-icons/3x2/flags.css`](https://unpkg.com/country-flag-icons/3x2/flags.css) where all flag icons are inlined as `background-image` data URLs. CSS flag icon height can be set via `--CountryFlagIcon-height` [CSS variable](https://caniuse.com/#feat=css-variables).
@@ -104,8 +104,6 @@ import Flags from 'country-flag-icons/react/3x2'
 ## Alternatives
 
 * [FlagKit](https://github.com/madebybowtie/FlagKit) ([`flagpack`](https://github.com/jackiboy/flagpack) npm package) — [`4x3`](https://github.com/jackiboy/flagpack/tree/master/flags/4x3) and [`1x1`](https://github.com/jackiboy/flagpack/tree/master/flags/1x1) SVG flag icons. MIT licence.
-
-<!-- Doesn't have [`AC` and `TA` flags](https://github.com/jackiboy/flagpack/pull/4). -->
 
 ## Credits
 
