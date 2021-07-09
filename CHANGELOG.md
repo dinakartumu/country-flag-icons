@@ -1,3 +1,8 @@
+1.3.0 / 09.07.2021
+==================
+
+* Added [SVGO](https://github.com/svg/svgo) optimization of the `*.svg` files, as [suggested](https://gitlab.com/catamphetamine/country-flag-icons/-/issues/12) by Neek Sandhu.
+
 1.2.8 / 22.12.2020
 ==================
 
