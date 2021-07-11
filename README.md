@@ -97,6 +97,24 @@ import Flags from 'country-flag-icons/react/3x2'
 <Flags.US title="United States" className="..."/>
 ```
 
+### String
+
+All flags can also be imported as strings:
+
+```js
+import { US } from 'country-flag-icons/string/3x2'
+
+console.log(US) // > '<svg xmlns="http://www.w3.org/2000/svg" ...</svg>'
+```
+
+Or directly, if your bundler doesn't support tree shaking:
+
+```js
+import US from 'country-flag-icons/string/3x2/US'
+
+console.log(US) // > '<svg xmlns="http://www.w3.org/2000/svg" ...'
+```
+
 ## GitHub
 
 On March 9th, 2020, GitHub, Inc. silently [banned](https://medium.com/@catamphetamine/how-github-blocked-me-and-all-my-libraries-c32c61f061d3) my account (erasing all my repos, issues and comments) without any notice or explanation. Because of that, all source codes had to be promptly moved to GitLab. The [GitHub repo](https://github.com/catamphetamine/country-flag-icons) is now only used as a backup (you can star the repo there too), and the primary repo is now the [GitLab one](https://gitlab.com/catamphetamine/country-flag-icons). Issues can be reported in any repo.

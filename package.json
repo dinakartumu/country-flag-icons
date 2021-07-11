@@ -40,6 +40,7 @@
     "generate-1x1-flags": "babel-node runnable/generate-1x1-flags",
     "copy-over-custom-1x1-flags": "copyfiles --flat flags/1x1-custom/*.svg flags/1x1",
     "generate-react-flags": "babel-node runnable/generate-react-flags",
+    "generate-string-flags": "babel-node runnable/generate-string-flags",
     "generate-css": "babel-node runnable/generate-css",
     "generate-optimized-1x1-flags": "svgo --folder flags/1x1 --output 1x1",
     "generate-optimized-flags": "svgo --folder flags/3x2 --output 3x2",
@@ -54,7 +55,7 @@
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
     "build-flags": "npm-run-all clean-for-build generate-1x1-flags copy-over-custom-1x1-flags generate-optimized-1x1-flags generate-optimized-flags",
     "build-countries": "npm-run-all generate-countries copy-es6-countries copy-commonjs-countries",
-    "build": "npm-run-all build-countries build-flags generate-react-flags build-commonjs-modules build-es6-modules generate-css",
+    "build": "npm-run-all build-countries build-flags generate-string-flags generate-react-flags build-commonjs-modules build-es6-modules generate-css",
     "test": "mocha --bail --require @babel/register --require esm --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
     "prepublish": "npm-run-all build test"
   },
