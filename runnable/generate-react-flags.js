@@ -5,10 +5,21 @@ import svgr from '@svgr/core'
 import COUNTRIES from '../source/countries.json'
 
 fs.outputFileSync(path.join(__dirname, '../source/react/3x2/index.js'), generateFlags('3x2'))
+
+for (const country of COUNTRIES) {
+	console.log(`../source/react/3x2/${country}.js`)
+	fs.outputFileSync(path.join(__dirname, `../react/3x2/${country}.js`), generateFlag(country, '3x2'))
+}
+
 fs.outputFileSync(path.join(__dirname, '../react/3x2/index.js'), generateIndex('3x2'))
 fs.outputFileSync(path.join(__dirname, '../react/3x2/index.commonjs.js'), generateIndexCommonJS('3x2'))
 
 fs.outputFileSync(path.join(__dirname, '../source/react/1x1/index.js'), generateFlags('1x1'))
+
+for (const country of COUNTRIES) {
+	fs.outputFileSync(path.join(__dirname, `../react/1x1/${country}.js`), generateFlag(country, '1x1'))
+}
+
 fs.outputFileSync(path.join(__dirname, '../react/1x1/index.js'), generateIndex('1x1'))
 fs.outputFileSync(path.join(__dirname, '../react/1x1/index.commonjs.js'), generateIndexCommonJS('1x1'))
 
@@ -33,6 +44,10 @@ ${COUNTRIES.map((country) => 'exports.' + country + ' = flags.' + country + ';')
 	`.trim()
 }
 
+// ${COUNTRIES.map((country) => {
+// 	return 'export { default as ' + country + ' } from \'./' + country + '\''
+// }).join('\n')}
+
 function generateFlags(aspectRatio) {
 	return `
 import React from "react"
@@ -44,6 +59,13 @@ export default {${COUNTRIES.map((country) => {
 	return '\n\t' + country + ': ' + country
 })}
 }
+	`.trim()
+}
+
+function generateFlag(country, aspectRatio) {
+	return `
+import React from "react"
+export default ({ title, ...rest }) => (\n${getCountryFlagSvgMarkup(country, aspectRatio)})
 	`.trim()
 }
 
