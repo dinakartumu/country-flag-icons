@@ -7,7 +7,6 @@ import COUNTRIES from '../source/countries.json'
 fs.outputFileSync(path.join(__dirname, '../source/react/3x2/index.js'), generateFlags('3x2'))
 
 for (const country of COUNTRIES) {
-	console.log(`../source/react/3x2/${country}.js`)
 	fs.outputFileSync(path.join(__dirname, `../react/3x2/${country}.js`), generateFlag(country, '3x2'))
 }
 
