@@ -40,6 +40,7 @@
     "generate-1x1-flags": "babel-node runnable/generate-1x1-flags",
     "copy-over-custom-1x1-flags": "copyfiles --flat flags/1x1-custom/*.svg flags/1x1",
     "generate-react-flags": "babel-node runnable/generate-react-flags",
+    "copy-react-flags": "npm-run-all copy-react-flags-3x2 copy-react-flags-1x1",
     "copy-react-flags-3x2": "copyfiles --flat modules/react/3x2/[A-Z][A-Z].js react/3x2",
     "copy-react-flags-1x1": "copyfiles --flat modules/react/1x1/[A-Z][A-Z].js react/1x1",
     "clean-react-flags": "rimraf ./source/react/*/[A-Z][A-Z].js",
@@ -58,7 +59,7 @@
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
     "build-flags": "npm-run-all generate-1x1-flags copy-over-custom-1x1-flags generate-optimized-1x1-flags generate-optimized-flags",
     "build-countries": "npm-run-all generate-countries copy-es6-countries copy-commonjs-countries",
-    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags build-commonjs-modules build-es6-modules copy-react-flags-3x2 copy-react-flags-1x1 clean-react-flags generate-css",
+    "build": "npm-run-all clean-for-build build-countries build-flags generate-string-flags generate-react-flags build-commonjs-modules build-es6-modules generate-css",
     "test": "mocha --bail --require @babel/register --require esm --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
     "prepublish": "npm-run-all build test"
   },
